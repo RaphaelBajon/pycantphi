@@ -81,7 +81,6 @@ cant_cstar = results.cStar
 CantCalculator.calculate_cstar(ct, aou, ct_preformed, delta_ca_corrected)
 CantCalculator.calculate_ctroca(ct, at, oxygen, theta)
 CantCalculator.calculate_cphi(calc.ds)
-
 ```
 
 ## Required Data Format
@@ -103,7 +102,6 @@ Your input dataset should include the following variables:
 ## Documentation
 
 The documentation is in progress. For detailed documentation, examples, and API reference, visit our [documentation page](https://pyphi.readthedocs.io) once finished.
-```
 
 ## Contributing
 
