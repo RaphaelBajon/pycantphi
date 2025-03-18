@@ -48,7 +48,7 @@ def load_maunaloa_pco2():
             # Read the file, skipping comment lines
             df = pd.read_csv(file_path, 
                              comment='#', 
-                             delim_whitespace=True, 
+                             sep='\s+', #delim_whitespace=True,
                              names=['year', 'pco2', 'unc'], 
                              dtype={'year': int, 'pco2': float, 'unc': float})
             return df

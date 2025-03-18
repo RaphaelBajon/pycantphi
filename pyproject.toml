@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pycantphi"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Python library for calculating anthropogenic carbon in the North Atlantic Ocean"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -65,14 +65,20 @@ notebook = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/RaphaelBajon/PyPhi"
-Documentation = "https://cantphi.readthedocs.io"
-Repository = "https://github.com/RaphaelBajon/pyphi.git"
-"Bug Tracker" = "https://github.com/RaphaelBajon/pyphi/issues"
+Homepage = "https://github.com/RaphaelBajon/pycantphi"
+Documentation = "https://pycantphi.readthedocs.io"
+Repository = "https://github.com/RaphaelBajon/pycantphi.git"
+"Bug Tracker" = "https://github.com/RaphaelBajon/pycantphi/issues"
 
 [tool.setuptools]
-packages = ["pycantphi"]
+packages = {find = {include = ["pycantphi", "pycantphi.*"]}}
 include-package-data = true
+# packages = ["pycantphi", "pycantphi.core", "pycantphi.preprocessing", "pycantphi.water_masses"]
+#
+#
+#pycantphi = "pycantphi"
+#myproj.algorithms = "algorithms"
+#myproj.configs = "configs"
 
 [tool.setuptools.package-data]
-"pycantphy" = ["data/**/*"]
+"pycantphi" = ["data/**/*"]

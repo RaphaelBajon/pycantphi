@@ -18,7 +18,7 @@ __email__ = "raphael.bajon@ifremer.fr"
 
 # Import main classes and functions for convenient access
 from .core.calculator import CantPhiCt0 as cantphi
-from .core.cant import CantCalculator 
+from .core.cant import CantCalculator
 
 # Define public API
 __all__ = [
